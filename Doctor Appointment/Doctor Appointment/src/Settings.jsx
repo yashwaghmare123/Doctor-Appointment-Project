@@ -6,11 +6,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JavaScri
 function Header() {
   return (
    
-    <div>
-      <h1>Settings</h1>
-      <h2>htrr</h2>
-      <h3></h3>
-    </div>
+    <>
+    
+    </>
        
   
   );
