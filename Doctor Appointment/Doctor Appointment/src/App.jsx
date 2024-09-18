@@ -1,19 +1,26 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from "./Navbar";
+import Profile from "./Profile";
+import History from "./History";
 import Settings from "./Settings"; // Import your settings component
+import Pat from "./Pat";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Navbar /> {/* Navbar with Settings button */}
-        <Routes>
-          <Route path="/settings" element={<Settings />} />
-          {/* Add other routes here */}
-        </Routes>
-      </div>
-    </Router>
+    <div>
+       <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Navbar />}></Route>
+      <Route path="/Profile" element={<Profile />}></Route>
+      <Route path="/History" element={<History />}></Route>
+      <Route path="Settings" element={<Settings />}></Route>
+      <Route path="Pat" element={<Pat />}></Route>
+      
+
+    </Routes>
+    </BrowserRouter>
+    </div>
   );
 }
 
