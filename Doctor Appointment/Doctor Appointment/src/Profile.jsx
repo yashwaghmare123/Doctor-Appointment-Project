@@ -37,8 +37,6 @@ function Profile() {
         </div>
       </nav>
       
-      
-
        
     
     </>

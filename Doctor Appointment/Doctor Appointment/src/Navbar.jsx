@@ -6,32 +6,32 @@ import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JavaScript 
 function Sidebar() {
   return (
     <>
-      <nav className="py-2 bg-body-tertiary border-bottom">
+      <nav className="py-2 bg-body-tertiary border-bottom sticky-top">
         <div className="container d-flex flex-wrap">
           <ul className="nav me-auto">
             <li className="nav-item">
-              <a href="#" className="nav-link link-body-emphasis px-2 active" aria-current="page">
-                <img src="dashb.png" height={30} alt="" /> Dashboard</a>
+            <Link className="nav-link link-body-emphasis px-2 active" to="/">
+                <img src="dashb.png" height={30} alt="" /> Dashboard </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link link-body-emphasis px-2">
-                <img src="prof.png" height={30} alt="" /> Profile</a>
+            <Link className="nav-link link-body-emphasis px-2" to="/Profile">
+                <img src="prof.png" height={30} alt="" /> Profile </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link link-body-emphasis px-2">
-                <img src="his.png" height={30} alt="" /> History</a>
+            <Link className="nav-link link-body-emphasis px-2" to="/History">
+                <img src="his.png" height={30} alt="" /> History </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link link-body-emphasis px-2" to="./Settings">
-                <img src="sett.png" height={30} alt="" /> Settings</Link>
+              <Link className="nav-link link-body-emphasis px-2" to="/Settings">
+                <img src="sett.png" height={30} alt="" /> Settings </Link>
             </li>
           </ul>
           <ul className="nav">
             <li className="nav-item">
-              <a href="#" className="nav-link link-body-emphasis px-2">Login</a>
+            <Link className="nav-link link-body-emphasis px-2 active" to="/Login">Login</Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link link-body-emphasis px-2">Sign up</a>
+            <Link className="nav-link link-body-emphasis px-2 active" to="/Signup">Sign up</Link>
             </li>
           </ul>
         </div>
@@ -91,66 +91,53 @@ function Sidebar() {
           <h3>Appointment Request</h3>
           <li className="list-group-item d-flex justify-content-between lh-sm">
             <div>
-              <h6 className="my-0">John Doe</h6>
+              <Link className="nav-link link-body-emphasis px-2 active" to="/Pat">John Doe </Link>
               <small className="text-body-secondary">Clinic Consulting</small>
             </div>
-            <span className="text-success">Today 11:00am 
-              <p>Mumbai</p>
-            </span>
+            <p class="badge bg-danger-subtle border border-danger-subtle text-danger-emphasis rounded-pill">Declined</p>
           </li>
           <li className="list-group-item d-flex justify-content-between lh-sm">
             <div>
-              <h6 className="my-0">Frank jordon</h6>
+            <Link className="nav-link link-body-emphasis px-2 active" to="/Pat">Frank jordon</Link>
               <small className="text-body-secondary">Emergency</small>
             </div>
-            <span className="text-success">10:00
-            <p>Mumbai</p>
-            </span>
+    <p class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">Confirmed</p>
           </li>
           <li className="list-group-item d-flex justify-content-between lh-sm">
             <div>
-              <h6 className="my-0">Ella Lucia</h6>
+            <Link className="nav-link link-body-emphasis px-2 active" to="/Pat">Ella Lucia</Link>
               <small className="text-body-secondary">Clinic Consulting</small>
             </div>
-            <span className="text-success">12:00 
-              <p>Mumbai</p>
-            </span>
+       <p class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">Confirmed</p>
           </li>
           <li className="list-group-item d-flex justify-content-between ">
             <div>
               <h6 className="my-0">Lucida Ferro</h6>
               <small className="text-body-secondary">Vedic Consulting</small>
             </div>
-            <span className="text-success">2:00
-            <p>Mumbai</p>
-            </span>
+            <p class="badge bg-danger-subtle border border-danger-subtle text-danger-emphasis rounded-pill">Declined</p>
+            
           </li>
           <li className="list-group-item d-flex justify-content-between ">
             <div>
               <h6 className="my-0">Lucida Ferro</h6>
               <small className="text-body-secondary">Vedic Consulting</small>
             </div>
-            <span className="text-success">2:00 
-              <p>Mumbai</p>
-            </span>
+          <p class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">Confirmed</p>
           </li>
           <li className="list-group-item d-flex justify-content-between ">
             <div>
               <h6 class="my-0">Lucida Ferro</h6>
               <small class="text-body-secondary">Vedic Consulting</small>
             </div>
-            <span className="text-success">2:00 
-              <p>Mumbai</p>
-            </span>
+            <p class="badge bg-danger-subtle border border-danger-subtle text-danger-emphasis rounded-pill">Declined</p>
           </li>         
            <li class="list-group-item d-flex justify-content-between ">
             <div>
               <h6 className="my-0">Lucida Ferro</h6>
               <small className="text-body-secondary">Vedic Consulting</small>
             </div>
-            <span className="text-success">2:00 
-              <p>Mumbai</p>
-            </span>
+            <p class="badge bg-danger-subtle border border-danger-subtle text-danger-emphasis rounded-pill">Declined</p>
           </li>
           <li className="list-group-item d-flex justify-content-between">
             <span>Total Patients</span>
@@ -166,9 +153,10 @@ function Sidebar() {
           <h6 className="my-0">John Doe</h6>
           <small className="text-body-secondary">Clinic Consulting</small>
         </div>
-        <span className="text-body-secondary">Today 11:00am
+        <span className="text-body-secondary">10:00
           <p>Mumbai</p>
         </span>
+        
       </li>
       <li className="list-group-item d-flex justify-content-between lh-sm">
         <div>
@@ -203,6 +191,7 @@ function Sidebar() {
       </li>
         </ul>
       </div>
+      
 
       <hr />
     </>
