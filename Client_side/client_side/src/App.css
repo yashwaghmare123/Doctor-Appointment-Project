@@ -1,0 +1,11 @@
+.btn .cal-btn:hover {
+    background-color: red;
+}
+body {
+    background-color: #eeeef8; /* Dark background color */
+    color: rgb(17, 12, 12); /* Optional: Set text color to white for better contrast */
+    margin: 0; /* Reset default margin */
+    font-family: Arial, sans-serif; /* Optional: Set a default font */
+  }
+  
+  
